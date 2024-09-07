@@ -1,0 +1,393 @@
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+
+
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+
+/*   ----- Imports  -----  */
+
+
+/* @import 'node_modules/modern-normalize/modern-normalize.css';  npm install modern-normalize  Resets elements for browser consistency.  https://www.npmjs.com/package/modern-normalize */
+
+
+/* @import "component1.css";   Component-specific stylesheets, if any.   */
+
+
+/* @import url(//fonts.googleapis.com/css?family=Font+Name); Add fonts from a hosted services like Google Fonts. */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Merriweather:wght@300;700;900&display=swap');
+
+/*   ----- Variables  -----  */
+
+:root {
+    --lightCream: #FFE6CF;
+    --offWhite: #F2F2F2;
+    --mossGreen: #293720;
+    --pineTreeGreen:#323801;
+    --oliveGreen: #60824B;
+    --transparentOliveGreen: rgba(59, 80, 45, 0.95);
+    --brighterMossGreen:#B1BF45;
+    --TransparentGreen: rgba(81,92,2,0.6);
+    --TransparentOrange: rgba(242,155,48,0.6);
+    --peach: #F6B480;
+    --burntOrange:#C98128;
+}
+
+
+/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+
+body {
+    /* Can alternatively define in html {}. */
+    background: url("images/hoh-rainforest-for-background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: var(--offWhite);
+    /* background-image: ; */
+    color: var(--offWhite);
+    font-family: 'Manrope', serif; font-weight:400; 
+    line-height: 1.2;
+    /* Define with at least one font name and its related generic family name.*/
+    margin: 0 auto;
+    padding:1.5%;
+    max-width: 80%;
+}
+
+
+/*  ----- Page layout blocks -----  */
+
+header {
+    background-color: var(--mossGreen);
+    height: auto;
+    width: auto;
+    margin: 2%;
+    padding: 30px;
+}
+main {}
+section {
+    background-color: var(--transparentOliveGreen);
+    padding: 2%;
+    margin: 2%;
+}
+article {
+    border-top: 6px solid var(--pineTreeGreen);
+    border-right: 6px hidden var(--pineTreeGreen);
+    border-bottom: 6px hidden var(--pineTreeGreen);
+    border-left: 8px hidden var(--oceanBlue);
+}
+
+    #topic1 {}
+
+    #topic2 {}
+
+div {}
+aside {}
+footer {
+    background-color: var(--mossGreen);
+    height: auto;
+    width: auto;
+    margin: 2%;
+    padding: .75%;}
+
+
+/* ----- Anchors ----- Text links */
+
+a {}
+
+a:link {}
+a:hover {}
+a:active {}
+a:visited {}
+
+
+/*  ----- Navigation ----- Override text links for navigation only.  */
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+nav a {
+    background-color: var(--burntOrange);
+    border:1px outset var(--burntOrange);
+    border-radius: 5px 5px 0 0 ;
+    color:var(--offWhite);
+    font-size: 1em;
+    line-height: 1;
+    font-weight: bold;
+    padding: 3px 20px 3px 21px;
+    text-decoration:none;
+    vertical-align: middle;
+    margin-left: 1%;
+}
+
+
+nav a:hover {
+    background-color: var(--lightCream);
+    color:var(--pineTreeGreen)
+}
+
+#conceptNav a {
+    background-color: transparent;
+    border: none;
+    border-radius: 4px 4px 0 0;
+    color: var(--burntOrange);
+    font-size: 1em;
+    line-height: 1;
+    font-weight: bold;
+    padding: 3px 10px 3px 10px;
+    text-decoration: underline;
+    text-decoration-color: var(--offWhite);
+    vertical-align: middle;
+}
+#conceptNav.local {
+    margin-bottom: 2%;
+}
+
+/*  -----  Typography  ----- */
+
+p {}
+br {}
+
+ol,ul,dl {}
+li {}
+dt {}
+dd {}
+
+h1,h2,h3,h4,h5,h6 {font-family: 'Merriweather', serif;font-weight: 900; color: var(--lightCream);}
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+
+#cactusHeader {
+    display: flex;
+    align-items: center;
+    }
+
+abbr {}
+acronym {}
+address {}
+blockquote {}
+    q {}
+    cite {}
+em {}
+hr {}
+mark {}
+s {}
+span {}
+strong {}
+sub {}
+sup {}
+time {}
+
+
+/*  ----- Coding or instructional typography ----- */
+
+pre {}
+code {}
+kbd {}
+samp {}
+var {}
+del {}
+ins {}
+
+
+/*  ----- Table ----- */
+
+table {}
+caption { 
+
+    
+    margin-top:7%;
+    padding:7px;
+    font-size: 1.2em;
+    color:var(--offWhite);
+    margin: 11px;
+
+}
+
+thead {
+    border:solid;
+}
+tbody {
+    border:solid;
+}
+tfoot {border:solid;}
+tr {
+    border:solid;
+    margin:7px;
+}
+    tr:nth-child(even) {}
+th {
+    border:solid;
+    border-color: var(--burntOrange);
+    margin:auto;
+    color: var(--lightCream);
+    background-color: var(--burntOrange);
+}
+td {
+    border:solid;
+    border-color:var(--burntOrange);
+    border-width: 1px;
+    margin-top:7px;
+    color: var(--lightCream)
+    
+    
+}
+    td:nth-child(1) {}
+colgroup {}
+data {}
+datalist {border:solid;}
+
+
+/*  ----- Form ----- */
+
+form {}
+fieldset {
+    border:groove;
+    margin-top:7%;
+    padding:7px;
+    font-size: 1em;
+    margin: 15px
+}
+    legend {
+        color:var(--brighterMossGreen);
+        font-size:1.25em;
+    }
+label {
+    display:block;
+    margin-top: 1%;
+}
+button {font-size:110%;
+    padding:.5%;
+    font-family:inherit;
+    border:solid;
+    color:var(--mossGreen);
+    background-color:var(--offWhite);}
+
+input {font-size:100%;
+    margin-left: 3px;
+    padding:1%;
+    font-family:inherit;
+    color:var(--mossGreen);}
+select {font-size:110%;
+    margin-top: 7px;
+    padding:2%;
+    font-family:inherit;}
+    optgroup {}
+    option {}
+textarea {font-size:110%;
+    margin-top: 7px;
+    height:50px;
+    width: 267px;
+    padding:2%;
+    font-family:inherit;}
+:focus{
+    background-color:;
+    }
+*:required {
+    border:2px solid var(--pineTreeGreen);
+}
+
+output {}
+meter {}
+progress {}
+
+
+/* ----- Media ----- */
+
+.gallery{
+    display: flex;
+    justify-content: center;
+    align-items: middle;
+    flex-flow: row wrap;
+	margin:0; 
+    padding:0;
+}
+.gallery figure {
+    text-align: center;
+    border: 2px solid var(--mossGreen);
+    border-radius: 5%;
+    border-width: medium;
+    color: var(--offWhite);
+    width: 350px;
+    height: auto;
+    margin:1%;
+    padding:1%;
+    border
+}
+.gallery figcaption {
+    display: block; 
+    padding: 2% 2% 2% 2%;
+    font-family: 'Manrope', serif; font-weight:600;
+    color: var(--peach);
+    
+    
+}
+.gallery img  {
+    width: 88%;
+    margin:0;
+    padding:0;
+    border-radius: 5%;
+    margin-bottom: 5px;
+}
+svg {}
+picture {}
+    source {}
+iframe {}
+video {}
+audio {}
+embed {}
+object {}
+
+#cactusLogo {
+    border-radius: 50%;
+    width: 75px;
+    height: auto; 
+    margin-right: 7px;
+}
+
+
+/*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+
+.gallery {}
+
+.floatright {}
+.floatleft {}
+.center-middle {}
+
+.ten {}
+.twenty {}
+.thirty {}
+.forty {}
+.fifty {}
+.sixty {}
+.seventy {}
+.eighty {}
+
+.radius {}
+.circle {}
+.boxshadow {}
+.tshadow {}
+.gradient {}
+.shape {}
+
+@keyframes App-logo {}
+
+
+/*   ===== TABLET  media query overrides mobile styles ===== */
+
+@media all and (min-width: 600px) {}
+
+
+/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+
+@media all and (min-width: 1080px) {}
+
+
+/*   ===== PRINT  media query overrides previous styles =====  */
+
+@media print {}

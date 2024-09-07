@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Caitlin Bax</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <header id="cactusHeader">
+
+        <img src="android-chrome-192x192.png" alt="Black and white cactus" id="cactusLogo" />
+        <h1>Caitlin Bax</h1>
+    </header>
+
+    <main>
+        <section>
+            <nav class="global" id="globalPages">
+                <a href="./index.html">Home</a>
+                <a href="./contact.html">Contact</a>
+                <a href="./gallery.html">Gallery</a>
+                <a href="./order.html">Order</a>
+            </nav>
+            <h2>Order</h2>
+            <article>
+                <h3>How can we help you?</h3> 
+            <form action="/order" method="post">
+
+                    <fieldset>
+                        <legend>Please enter the following information...</legend>
+                        <label for="fnameLname">First and Last Name
+                            <input type="text" name="fnameLname" id="fnameLname" size="25" maxlength="150" required
+                                placeholder="First and last name" autofocus />
+                        </label>
+                    
+                        <label for="email">Email
+                            <input type="email" name="emailAddress" id="email" size="25" maxlength="150" required
+                                pattern="[^ @]+@[^ @]+.[a-z]+" placeholder="email@host.com" />
+                        </label> 
+
+                        <label for="address">Address
+                            <input type="text" name="Address" id="Address" size="25" maxlength="150" required
+                                placeholder="address, city, state, zipcode" />
+                        </label> 
+
+                        <label for="yourInstructions">Please provide the following delivery instructions for your order</label>
+                            <textarea name="yourInstructions" id="yourInsructions" minlength="3" maxlength="300" size= "3" required
+                                placeholder="Please write 300 characters or less."></textarea>
+                        
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Pet Products for Purchase </legend>
+
+                        <table id="petProductTable">
+                            <caption> Order one product due to supply chain issues</caption>
+                            <thead>
+                                <tr>
+                                    <th>Company</th>
+                                    <th>Product</th>
+                                    <th>Price</th>
+                                </tr>
+
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>AGYM</td>
+                                    <td>
+                                        <label for="AGYM">
+                                            <input type="radio" name="orderProduct" id="AGYM" size="25" maxlength="150" required
+                                            value ="Spinning Cat Scratcher Ball" />Spinning Cat Scratcher Ball
+                                        </label> </td>
+                                    <td>$52.99</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Jasonwell</td>
+                                    <td>
+                                        <label for="Jasonwell">
+                                            <input type="radio" name="orderProduct" id="Jasonwell" size="25" maxlength="150" required
+                                                value ="Foldable Dog Pool" />Foldable Dog Pool
+                                        </label></td>
+                                    <td>$27.25</td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>Expawlorer</td>
+                                    <td>
+                                        <label for="Expawlorer">
+                                            <input type="radio" name="orderProduct" id="Expawlorer" size="25" maxlength="150" required
+                                                value ="Dog Fence Window" />Dog Fence Window
+                                        </label></td>
+                                    <td>$30.50</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Lollimeow</td>
+                                    <td>
+                                        <label for="Lollimeow">
+                                            <input type="radio" name="orderProduct" id="Lollimeow" size="25" maxlength="150" required
+                                                value ="Capsule Pet Travel Backpack" />Capsule Pet Travel Backpack
+                                    </label></td>
+                                    <td>$59.00</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Drool'd</td>
+                                    <td>
+                                        <label for="Drool'd">
+                                            <input type="radio" name="orderProduct" id="Drool\'d" size="25" maxlength="150" required
+                                                value ="Cat Hamster Wheel" />Cat Hamster Wheel
+                                        </label></td> 
+                                    <td>$349.75</td>
+                                </tr>
+                            </tbody>
+                            </table>
+
+                        <label for="Quantity">Enter the quantity between 1 and 50</label>
+                        <input type="number" name="Quantity" id="Quantity" size="25" maxlength="50" max="50" required
+                        value ="Cat Hamster Wheel" />
+                        
+
+
+
+                        <button type="submit">Send it!</button>
+                    </fieldset>
+                </form>
+            </article>   
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Caitlin Bax </p>
+    </footer>
+</body>
+
+</html>

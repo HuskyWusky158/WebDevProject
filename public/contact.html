@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Caitlin Bax</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <header id="cactusHeader">
+
+        <img src="android-chrome-192x192.png" alt="Black and white cactus" id="cactusLogo" />
+        <h1>Caitlin Bax</h1>
+    </header>
+
+    <main>
+        <section>
+            <nav class="global" id="globalPages">
+                <a href="./index.html">Home</a>
+                <a href="./contact.html">Contact</a>
+                <a href="./gallery.html">Gallery</a>
+                <a href="./order.html">Order</a>
+            </nav>
+            <h2>Contact</h2>
+        
+            <article> 
+                <h3>I am so happy you came to my site and I would love to receive any feedback you have. Please make sure you stay informed by signing up for my emails! </h3>
+            <form action="/results" method="post">
+
+                    <fieldset>
+                        <legend>Please enter the following information...</legend>
+                        <p><label for="fnameLname">First and Last Name
+                                <input type="text" name="fnameLname" id="fnameLname" size="25" maxlength="150" required
+                                    placeholder="First and last name" autofocus />
+                            </label>
+                        </p>
+
+                        <p>
+                            <label for="email">Email
+                                <input type="email" name="emailAddress" id="email" size="25" maxlength="150" required
+                                    pattern="[^ @]+@[^ @]+.[a-z]+" placeholder="email@host.com" />
+                            </label>
+                        </p>   
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Provide the following feedback...</legend>
+
+                        <label for="howDidYouLearn">How did you hear learn about us?</label>
+                        <select name="howDidYouLearn" id="howDidYouLearn">
+                            <option value="an acquaintance">Acquaintance</option>
+                            <option value="Google">Google</option>
+                            <option value="Yelp">Yelp</option>
+                            <option value="social media">Social Media</option>
+                            <option value="newsletter">Newsletter</option>
+                            <option value="other" selected>Other</option>
+                        </select>
+
+                        <p>Would you visit us again?
+                            <label for="ofCourse">
+                                <input type="radio" name="visit" id="ofCourse" value="Of course">
+                                Of course</label>
+                            <label for="possibly">
+                                <input type="radio" name="visit" id="possibly" value="Possibly">
+                                Possibly </label>
+                            <label for="nope">
+                                <input type="radio" name="visit" id="nope" value="Nope">
+                                Nope</label>
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Anything else?</legend>
+                        <p><label for="yourInput">Is there anything else we should know?</label>
+                            <textarea name="yourInput" id="yourInput" minlength="2" maxlength="300" required
+                                placeholder="Please write 300 characters or less."></textarea>
+                        </p>
+                        <p>Would you like to receive any of the following?</p>
+                        <p><label for="signMeUp">
+                                <input type="checkbox" name="signMeUp" id="signMeUp" value = "Sign me up for the latest updates! "checked />Sign me up for the latest updates!      
+                                </label>
+                        </p>
+                        <p><label for="coupons">
+                            <input type="checkbox" name="coupons" id="coupons" value= "I would like to receive coupons ONLY!" checked />I would like to receive coupons ONLY!
+                            </label>
+                        </p>
+                        <p><label for="no">
+                            <input type="checkbox" name="no" id="nothing" value = "Please, no emails. " checked /> Please, no emails.
+                            </label>
+                        </p>
+                        <button type="submit">Submit</button>
+                    </fieldset>
+                </form>
+            </article>   
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Caitlin Bax </p>
+    </footer>
+</body>
+
+</html>
